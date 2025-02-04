@@ -1,0 +1,153 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #87CEEB, #f0f8ff);
+    color: #333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.city {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.temp-range {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.current-temp {
+    font-size: 5rem;
+    margin: 20px 0;
+}
+
+.weather-desc {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.toggle-btn {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hourly-temp-box {
+    display: flex;
+    overflow-x: auto;
+    background-color: #e0f7fa;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.hour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 60px;
+    padding: 5px;
+}
+
+.separator {
+    width: 1px;
+    background-color: #ccc;
+    margin: 0 5px;
+}
+
+.hour img {
+    width: 30px;
+    height: 30px;
+}
+
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.suggestions-box {
+    background-color: #e3f2fd;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.clothing-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.clothing-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.clothing-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.right-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.uv-index-box {
+    background-color: #e8f5e9;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.uv-index {
+    color: green;
+    font-weight: bold;
+}
+
+.air-quality-box {
+    background-color: #fff3e0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.footer {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
