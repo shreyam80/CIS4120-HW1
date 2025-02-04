@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App Home Screen</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .phone-frame {
+            width: 375px;
+            height: 812px;
+            border: 2px solid #000;
+            border-radius: 0;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(to bottom, #87CEEB, #f0f8ff);
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .info-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        .suggestions-box {
+            background-color: #e3f2fd;
+            padding: 10px;
+            border-radius: 10px;
+            width: 55%;
+        }
+
+        .clothing-items {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .clothing-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .clothing-item img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .right-boxes {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 40%;
+        }
+
+        .uv-index-box, .air-quality-box {
+            background-color: #fff3e0;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 0;
+        }
+
+        .uv-index-box {
+            margin-bottom: 5px;
+        }
+
+        .footer {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="phone-frame">
+        <div class="container">
+            <div class="city">PHILADELPHIA</div>
+            <div class="temp-range">High: 50° | Low: 31°</div>
+            <div class="current-temp">43°</div>
+            <div class="weather-desc">Cloudy</div>
+            <button class="toggle-btn">Feels Like</button>
+
+            <div class="hourly-temp-box">
+                <div class="hour">
+                    <p>Now</p>
+                    <img src="assets/cloud-icon.png" alt="cloud icon">
+                    <p>43°</p>
+                </div>
+                <div class="separator"></div>
+                <div class="hour">
+                    <p>1 PM</p>
+                    <img src="assets/cloud-icon.png" alt="cloud icon">
+                    <p>43°</p>
+                </div>
+                <div class="separator"></div>
+                <div class="hour">
+                    <p>2 PM</p>
+                    <img src="assets/cloud-icon.png" alt="cloud icon">
+                    <p>44°</p>
+                </div>
+                <div class="separator"></div>
+                <div class="hour">
+                    <p>3 PM</p>
+                    <img src="assets/cloud-icon.png" alt="cloud icon">
+                    <p>41°</p>
+                </div>
+                <div class="separator"></div>
+                <div class="hour">
+                    <p>4 PM</p>
+                    <img src="assets/cloud-icon.png" alt="cloud icon">
+                    <p>41°</p>
+                </div>
+                <div class="separator"></div>
+                <div class="hour">
+                    <p>5 PM</p>
+                    <img src="assets/cloud-icon.png" alt="cloud icon">
+                    <p>40°</p>
+                </div>
+                <div class="separator"></div>
+                <div class="hour">
+                    <p>6 PM</p>
+                    <img src="assets/cloud-icon.png" alt="cloud icon">
+                    <p>38°</p>
+                </div>
+                <div class="separator"></div>
+                <div class="hour">
+                    <p>7 PM</p>
+                    <img src="assets/cloud-icon.png" alt="cloud icon">
+                    <p>38°</p>
+                </div>
+                <div class="separator"></div>
+                <div class="hour">
+                    <p>8 PM</p>
+                    <img src="assets/cloud-icon.png" alt="cloud icon">
+                    <p>37°</p>
+                </div>
+                <div class="separator"></div>
+                <div class="hour">
+                    <p>9 PM</p>
+                    <img src="assets/cloud-icon.png" alt="cloud icon">
+                    <p>36°</p>
+                </div>
+                <div class="separator"></div>
+                <div class="hour">
+                    <p>10 PM</p>
+                    <img src="assets/cloud-icon.png" alt="cloud icon">
+                    <p>36°</p>
+                </div>
+                <div class="separator"></div>
+                <div class="hour">
+                    <p>11 PM</p>
+                    <img src="assets/cloud-icon.png" alt="cloud icon">
+                    <p>36°</p>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <div class="suggestions-box">
+                    <p>Clothing Suggestions:</p>
+                    <div class="clothing-items">
+                        <div class="clothing-item">
+                            <img src="assets/sweater.png" alt="Sweater">
+                            <p>Sweater</p>
+                        </div>
+                        <div class="clothing-item">
+                            <img src="assets/jeans.png" alt="Jeans">
+                            <p>Jeans</p>
+                        </div>
+                        <div class="clothing-item">
+                            <img src="assets/boots.png" alt="Boots">
+                            <p>Boots</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-boxes">
+                    <div class="uv-index-box">UV Index: <span class="uv-index">5</span></div>
+                    <div class="air-quality-box">Air Quality: 44</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
